@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Travelogue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#main-section">BORA BORA</a></li>
+                <li><a href="#trip2">SAN FRANSISCO</a></li>
+                <li><a href="#trip3">AMSTERDAM</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Alex's Travelogue</h1>
+            <p>My Upcoming Trips:</p>
+        </div>
+    </header>
+    <section id="main-section">
+        <section id="trip1" class="trip-section">
+            <div class="trip-image">
+                <p id="image-click-caption-borabora" class="image-click">Click to see more photos!</p>
+                <img id="trip1image" src="images/boraboraimage1.jpg" alt="Trip 1"
+                    data-captions="A beautiful view of Bora Bora, French Polynesia|Aerial view of the Bora Bora atoll |A picture of a Blacktip Reef Shark in Bora Bora">
+                <p id="boraboraimage-caption" class="image-caption">A beautiful view of Bora Bora, French Polynesia</p>
+            </div>
+            <section class="trip-details">
+                <h2>Trip 1: <span class="trip-location">Bora Bora, French Polynesia</span>
+                    <span class="countdown-timer" data-date="2026-02-05T00:00:00"></span>
+                </h2>
+                <p class="trip-description">My girlfriend and I are planning an eventual trip to Bora Bora, which she has always dreamed of
+                    since she was a child. We are excited to see the crystal clear waters and the beautiful beaches, along with staying in a hut
+                    over the water. We are also excited to try the local cuisine and see the local wildlife including Blacktip Reef Sharks and
+                    Lemon Sharks. 
+                    <a href="https://www.tahititourisme.ca/islands/bora-bora/" class="trip-link">Learn more about Bora Bora!</a>
+                </p>
+                
+            </section>
+        </section>
+        <section id="trip2" class="trip-section">
+            <div class="trip-image">
+                <p id="image-click-caption-sanfran" class="image-click">Click to see more photos!</p>
+                <img id="trip2image" src="images/sanfranimage1.jpg" alt="Trip 2"
+                    data-captions="The Golden Gate Bridge overlooking San Francisco|Some Jellyfish at the San Fransisco Bay Aquarium|A traincar rolling down the streets of San Fransisco">
+                <p id="sanfranimage-caption" class="image-caption">The Golden Gate Bridge overlooking San Fransisco.</p>
+            </div>
+            <section class="trip-details">
+                <h2>Trip 2: <span class="trip-location">San Fransisco, California (USA)</span>
+                    <span class="countdown-timer" data-date="2025-02-16T00:00:00"></span>
+                </h2>
+                <p class="trip-description">We are also planning a trip to San Fransisco where we would like to visit a number of museums,
+                    including the Exploratorium and the California Academy of Sciences. We are also excited to see the Golden Gate Bridge and
+                    Alcatraz Island, as well as the unique nightlife in the city. In addition, we would like to get tattoos done at one of the
+                    iconic tattoo parlors in San Fransisco, either Black Serum, Moth and Dagger, or Gold Leaf Ink.
+                    <a href="https://www.sftravel.com/" class="trip-link">Learn more about San Fransisco!</a>
+                </p>
+            </section>
+        </section>
+        <section id="trip3" class="trip-section">
+            <div class="trip-image">
+                <p id="image-click-caption-amsterdam" class="image-click">Click to see more photos!</p>
+                <img id="trip3image" src="images/amsterdamimage1.jpg" alt="Trip 3"
+                data-captions="A row of adorable houses in Amsterdam, The Netherlands|Amsterdam's iconic canals|A view of the Rijksmuseum in Amsterdam">
+                <p id="amsterdamimage-caption" class="image-caption">A row of adorable houses in Amsterdam, The Netherlands</p>
+            </div>
+            <section class="trip-details">
+                <h2>Trip 3: <span class="trip-location">Amsterdam, The Netherlands</span>
+                    <span class="countdown-timer" data-date="2027-07-04T00:00:00"></span>
+                </h2>
+                <p class="trip-description">The final trip on our current itinerary is the Netherlands, where my mom's side of the family originates.
+                    We would really like to visit the Rijksmuseum and Van Gogh Musuem to see some of the finest art from the 18th and 19th centuries, 
+                    as well as go on a romantic canal cruise to see the various sights of the city. We would also like to Heineken Brewery and the Vondelpark,
+                    which is the largest park in Amsterdam with beautiful tulips of all colours.
+                    <a href="https://www.iamsterdam.com/en" class="trip-link">Learn more about Amsterdam!</a>
+                </p>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <h1>A map of our trips</h1>
+        <div id="map" style="height: 500px; width: 100%; margin: 1rem auto;"></div>
+        <p>Created by Alex Smith</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
