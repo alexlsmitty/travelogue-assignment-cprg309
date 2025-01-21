@@ -107,10 +107,12 @@ p.trip-description {
 /*Image styles*/
 div.trip-image {
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     padding: 0;
+    width:75%;
 }
 .trip-image {
     position: relative;
@@ -119,14 +121,15 @@ div.trip-image {
 }
 
 .trip-image img {
-    width: 50%;
+    width: 100%;
     max-width: 100%;
     transition: 0.5s;
 }
 
 .trip-image .image-caption {
     position: absolute;
-    bottom: 5%;
+    width: 100%;
+    bottom: 0;
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -138,6 +141,7 @@ div.trip-image {
 }
 .trip-image .image-click {
     position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -186,8 +190,8 @@ div.trip-image {
         font-size: 0.875rem; 
     }
 
-    .image-caption {
-        font-size: 0.75rem; 
+    .image-caption, .image-click {
+        display: none;
     }
 
     .countdown-timer {
@@ -204,6 +208,9 @@ div.trip-image {
     ul {
         display: flex;
         flex-direction: column;
+    }
+    .trip-image img {
+        width: 100%;
     }
 }
 
